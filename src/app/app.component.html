@@ -1,5 +1,10 @@
-<app-datepicker formControlName="dob" [minDate]="min" [maxDate]="max"></app-datepicker>
+<div style="margin: 3rem">
+  <app-datepicker [formControl]="dateCtrl" [maxDate]="max" [minDate]="min"></app-datepicker>
+</div>
 
 <p>Raw Value: {{ dateCtrl.value | json }}</p>
 <p>Persian: {{ dateCtrl.value?.format('jYYYY/jMM/jDD') }}</p>
 <p>Gregorian: {{ dateCtrl.value?.format('YYYY-MM-DD') }}</p>
+
+
+<button (click)="printDate()" color="primary" mat-raised-button>Print date in console</button>
