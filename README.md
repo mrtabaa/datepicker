@@ -14,3 +14,5 @@ This is a jalaali datepicker using the official Angular Material for Persian cal
     npm i moment-jalaali
     ```
 3. See `app-component` for the usecase. 
+
+--Enjoy using it...
